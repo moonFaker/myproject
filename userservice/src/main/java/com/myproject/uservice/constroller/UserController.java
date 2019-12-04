@@ -21,7 +21,7 @@ public class UserController {
     @RequestMapping("/findById")
     @HystrixCommand(fallbackMethod = "fallBack")
     public  Object findById(@RequestParam("userId")String userId,@RequestParam("testId")String testId){
-
+        System.out.println("asdasdas");
         System.out.println("进入19");
          System.out.println("1111");
 
