@@ -23,6 +23,8 @@ public class UserController {
     public  Object findById(@RequestParam("userId")String userId,@RequestParam("testId")String testId){
 
         System.out.println("进入19");
+         System.out.println("1111");
+
         return    restTemplate.getForObject("http://mybatis/api/v1/findById="+userId,Object.class);
         //return  userClient.findByIds(userId);
     }
